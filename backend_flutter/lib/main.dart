@@ -1,6 +1,7 @@
 import 'package:backend_flutter/node.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:backend_flutter/django.dart';
 
 void main() {
   runApp(MyApp());
@@ -43,6 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 }
 
   , child: Text("Node.js Backend")),
+                TextButton(onPressed: () {
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => Django()
+                  ));
+                }
+
+                    , child: Text("Django Backend")),
               ],
             ),
           ),

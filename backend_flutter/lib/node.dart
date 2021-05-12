@@ -23,7 +23,7 @@ class _NodeState extends State<Node> {
       }
     }
     catch(e){
-      return "Error Occurred !";
+      return e.toString();
     }
   }
   @required
